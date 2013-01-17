@@ -1,4 +1,4 @@
 blog
 ====
 
-Rails Blog
+Rails Blog App
