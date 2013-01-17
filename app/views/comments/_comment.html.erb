@@ -3,4 +3,7 @@
 
 <p><b>Comment</b>
 <br /><%= comment.body %></p>
+
+<%= link_to "Destroy comment", [comment.post, comment], :confirm => "Are you sure?", :method => :delete %>
+
 <hr />
