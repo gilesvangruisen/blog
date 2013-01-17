@@ -12,10 +12,10 @@
 
 <p>
   <b>Content:</b>
-  <%= @post.content %>
+  <%= raw markdown(@post.content) %>
 </p>
 <h2>Tags</h2>
-<%= @post.tags.map { |t| t.name }.join(", ") %>
+<%= join_tags(@post) %>
 
 <h2>Comments</h2>
 <%= render @post.comments %>
